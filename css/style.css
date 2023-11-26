@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #222222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+main {
+    padding: 35px 20px;
+    background-color: #e5e5e5;
+}
+
+main section.hero {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+main section.hero div.img {
+    width: 50%;
+    position: relative; /* Añade posición relativa para que la posición absoluta funcione */
+}
+
+main section.hero div img {
+    width: 100%;
+    height: auto;
+}
+
+main section.hero div h2.title {
+    color: #FC200C;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+}
+
+main section.hero div h2 span {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+h2.podio{
+    font-size: 2.5rem;
+    color: #FC200C;
+    text-align: center;
+}
+
+.podio {
+    text-align: center;
+}
+.segundo{
+    width: 50%;
+}
+.list {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.list .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    font-size: 1.4rem;
+    margin: 20px;
+    padding: 20px;
+}
+
+.list h3 {
+    margin: 10px 0;
+}
+
+
+.img {
+    max-width: 35%;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+footer h1 {
+    display: flex;
+    gap: 20px;
+}
+
+footer nav ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .list {
+        flex-direction: column;
+    }
+
+    .img {
+        max-width: 75%;
+    }
+}
